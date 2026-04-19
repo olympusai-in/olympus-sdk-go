@@ -17,9 +17,8 @@ func main() {
 	client := olympus.New(olympus.Config{
 		APIKey:        apiKey,
 		Service:       "my-go-app",
-		Endpoint:      "http://localhost:4000",
+		Endpoint:      "https://api.olympusai.in",
 		FlushInterval: 5 * time.Second,
-		BatchSize:     99,
 	})
 	defer client.Close()
 
