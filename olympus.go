@@ -19,7 +19,7 @@ const (
 type Config struct {
 	APIKey        string
 	Service       string
-	Endpoint      string        // default: http://localhost:4000
+	Endpoint      string        // default: https://api.olympusai.in
 	FlushInterval time.Duration // default: 10s
 	BatchSize     int           // default: 100
 }
@@ -45,7 +45,7 @@ type Client struct {
 
 func New(cfg Config) *Client {
 	if cfg.Endpoint == "" {
-		cfg.Endpoint = "http://localhost:4000"
+		cfg.Endpoint = "https://api.olympusai.in"
 	}
 	if cfg.FlushInterval == 0 {
 		cfg.FlushInterval = 10 * time.Second
