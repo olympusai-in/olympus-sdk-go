@@ -1,3 +1,3 @@
-module github.com/olympusai-in/olympus-sdks/go
+module github.com/olympusai-in/olympus-sdk-go
 
 go 1.21

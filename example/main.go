@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	olympus "github.com/olympusai-in/olympus-sdks/go"
+	olympus "github.com/olympusai-in/olympus-sdk-go"
 )
 
 func main() {
